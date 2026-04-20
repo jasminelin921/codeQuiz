@@ -1,0 +1,1 @@
+export { default as BookmarkCard } from './BookmarkCard'

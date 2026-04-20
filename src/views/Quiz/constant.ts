@@ -1,0 +1,1 @@
+export const QUIZ_TIME_LIMIT = 30  // 每題秒數
