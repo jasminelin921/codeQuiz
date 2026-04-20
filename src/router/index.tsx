@@ -20,6 +20,7 @@ const routes = [
       </LayoutContainer>
     ),
     children: [
+      { path: '/', element: <Navigate to="/home" replace /> },
       { path: '/home', element: <HomePage /> },
       {
         path: '/quiz',
@@ -44,7 +45,7 @@ const routes = [
             <BookmarkPage />
           </ProtectedRoute>
         )
-      },
+      }
     ]
   },
   {
