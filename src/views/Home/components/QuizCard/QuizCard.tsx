@@ -8,7 +8,7 @@ interface QuizCardProps {
 
 const QuizCard = ({ quiz, isCompleted, onStart }: QuizCardProps) => {
   return (
-    <div className="bg-card-bg border-border flex xl:w-47 flex-col justify-between rounded-xl border p-3">
+    <div className="bg-card-bg border-border flex flex-col justify-between rounded-xl border p-3">
       <div>
         <div className="mb-2 flex items-start justify-between">
           <span

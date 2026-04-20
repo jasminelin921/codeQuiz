@@ -111,7 +111,7 @@ const HomePage = () => {
                   >
                     <path d="M3 6l5 5 5-5" />
                   </svg>
-                  <span className="text-label text-text-muted  flex items-center font-medium">
+                  <span className="text-label text-text-muted flex items-center font-medium">
                     {TOPIC_LABEL[topic]}
                   </span>
                   <span className="text-hint text-text-muted ml-2 flex h-5 w-5 items-center justify-center rounded bg-white">
@@ -124,7 +124,9 @@ const HomePage = () => {
                     isTopicCollapsed(topic) ? 'max-h-0 opacity-0' : 'max-h-500 opacity-100'
                   }`}
                 >
-                  <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
+                  <div
+                    className={`grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3 ${isLoggedIn ? 'xl:grid-cols-4' : 'lg:grid-cols-4 xl:grid-cols-5'}`}
+                  >
                     {groupedQuizzes[topic].map((quiz) => (
                       <QuizCard
                         key={quiz.id}
