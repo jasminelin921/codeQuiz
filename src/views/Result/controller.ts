@@ -13,7 +13,7 @@ interface ResultState {
 const useController = () => {
   const navigate = useNavigate()
   const location = useLocation()
-  const { username } = useAuthContext()
+  const { username, refreshStats } = useAuthContext()
   const hasSavedRecord = useRef(false)
   const [bookmarkedIds, setBookmarkedIds] = useState<string[]>([])
   const state = location.state as ResultState | null
@@ -103,6 +103,7 @@ const useController = () => {
       completedAt: new Date().toISOString()
     }
     authService.saveQuizRecord(username, record)
+    refreshStats(username)
   }, [state, username, quizId, correctCount, totalCount, accuracy, avgTime])
 
   useEffect(() => {
