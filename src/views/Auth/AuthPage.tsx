@@ -27,7 +27,7 @@ const AuthPage = () => {
 
       <div className="mt-3 text-center">
         <p className="text-footer text-gray-300">
-          Code Quiz © {year} <img src={githubIcon} alt="GitHub Icon" className="inline h-4.5 w-4.5 mb-1 mx-1" /><a href="https://jasminelin921.github.io/codeQuiz/" className='underline'>Jasmine Lin</a>
+          Code Quiz © {year} <img src={githubIcon} alt="GitHub Icon" className="inline h-4.5 w-4.5 mb-1 mx-1" /><a href="https://github.com/jasminelin921/codeQuiz" className='underline'>Jasmine Lin</a>
         </p>
       </div>
     </div>
